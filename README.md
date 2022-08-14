@@ -179,6 +179,8 @@ PublicKey = Public key of an account
 PrivateKey = Private key of an account
 IP = IP address or DNS of your server
 </sub>
+
+
 ```
 "MASTER_ACCOUNT":
 {
