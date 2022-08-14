@@ -38,6 +38,8 @@ The Inery software represents a perfect solution for any business that wants to 
 | ------------ | ------------ |
 | OS | Ubuntu 16.04 |
 
+### Recommended 
+
 | Component | Recommended Requirement |
 | OS | Ubuntu 18.04 or higher |
 
