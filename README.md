@@ -16,29 +16,29 @@ The Inery software represents a perfect solution for any business that wants to 
 
 ### Node Requirement 
 
-| Component | 	| Minimum Requirement |
-| ------------ | | ------------ |
-| CPU |	| Intel Core i3 or i5 |
-| RAM	| | 4 GB DDR4 RAM |
-| Storage	| | 500 GB HDD |
-| Connection | | 100 Mbit/s port |
+| Component | Minimum Requirement |
+| ------------ | ------------ |
+| CPU |	Intel Core i3 or i5 |
+| RAM	| 4 GB DDR4 RAM |
+| Storage	| 500 GB HDD |
+| Connection | 100 Mbit/s port |
 
 *Recommended Requirement*
-| CPU |	| Intel Core i7-8700 Hexa-Core |
-| RAM | | 64 GB DDR4 RAM |
-| Storage	 | | 2 x 1 TB NVMe SSD |
-| Connection |	| 1 Gbit/s port |
+| CPU | Intel Core i7-8700 Hexa-Core |
+| RAM | 64 GB DDR4 RAM |
+| Storage	 | 2 x 1 TB NVMe SSD |
+| Connection | 1 Gbit/s port |
 
 </p>
 
 ### Software Requirements
 
-| Component |	| Minimum Requirement |
-| ------------ | | ------------ |
-| OS | | Ubuntu 16.04 |
+| Component |	Minimum Requirement |
+| ------------ | ------------ |
+| OS | Ubuntu 16.04 |
 
-| Component | | Recommended Requirement |
-| OS | | Ubuntu 18.04 or higher |
+| Component | Recommended Requirement |
+| OS | Ubuntu 18.04 or higher |
 
 ## Required Dependendencies
 For building Inery binaries, blockchain requires some software dependencies. The main dependencies are :
