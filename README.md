@@ -1,4 +1,229 @@
-# Full-Node
-Using VPS don't use your Personal Computer
+</p>
 
+<p align="center">
+  <img height="50" height="auto" src="https://user-images.githubusercontent.com/38981255/184088981-3f7376ae-7039-4915-98f5-16c3637ccea3.PNG">
+</p>
+
+## *What is Inery ?*
+What is Inery
+
+Inery represents a distributed database with blockchain synergy adopted in order to utilize blockchain technology to decentralize data while, at the same time, reducing data breaches and assuring security. This approach secures user data and has a widespread usage.
+
+Our goal is to make Inery usable for anything and everything. It can be used in secure storage, medicine, supply chains, finance, banking, etc. The Inery platform application functions as a container for storing data which is continually being converted into a computer-readable form. In this way, with the data being securely stored and bound by value contracts, the Inery Blockchain enables to store, varify, and transfer data with utmost transparency and security.
+
+The Inery software represents a perfect solution for any business that wants to benefit from the decentralized blockchain technology. As such, Inery is specially designed to address the decentralization of databases.
+</p>
+
+### Node Requirement 
+
+| Component | 	| Minimum Requirement |
+| ------------ | | ------------ |
+| CPU |	| Intel Core i3 or i5 |
+| RAM	| | 4 GB DDR4 RAM |
+| Storage	| | 500 GB HDD |
+| Connection | | 100 Mbit/s port |
+
+*Recommended Requirement*
+| CPU |	| Intel Core i7-8700 Hexa-Core |
+| RAM | | 64 GB DDR4 RAM |
+| Storage	 | | 2 x 1 TB NVMe SSD |
+| Connection |	| 1 Gbit/s port |
+
+</p>
+
+### Software Requirements
+
+| Component |	| Minimum Requirement |
+| ------------ | | ------------ |
+| OS | | Ubuntu 16.04 |
+
+| Component | | Recommended Requirement |
+| OS | | Ubuntu 18.04 or higher |
+
+## Required Dependendencies
+For building Inery binaries, blockchain requires some software dependencies. The main dependencies are :
+
+-Clang
+-CMake
+-Boost
+-OpenSSL
+-LLVM
+
+## Installing Dependencies
+To install all required dependencies on ubuntu distribution open terminal and execute the following command:
+
+```
+sudo apt-get install -y make bzip2 automake libbz2-dev libssl-dev doxygen graphviz libgmp3-dev \
+autotools-dev libicu-dev python2.7 python2.7-dev python3 python3-dev \
+autoconf libtool curl zlib1g-dev sudo ruby libusb-1.0-0-dev \
+libcurl4-gnutls-dev pkg-config patch llvm-7-dev clang-7 vim-common jq libncurses5
+```
+
+</P>
+## 1. Create your Account and Register your IP here [Inery Dashboard](https://testnet.inery.io/)
+
+</p>
+## 2. Update Tools
+```
+sudo apt-get update && sudo apt install git && sudo apt install screen
+```
+
+## 3. Download Inery Node package
+```
+ git clone  https://github.com/inery-blockchain/inery-node
+```
+
+## 4. Export bin path
+
+After download is finished, go to inery.node directory
+```
+ cd inery-node
+```
+
+Inside inery-node there is inery and inery.setup directories inery directory contains all binaries in order for blockchain protocol to work, those binaries path must be exported to OS enviroment
+```
+ ls    
+inery inery.setup
+```
+Go to inery.setup directory
+```
+ cd inery.setup
+```
+
+Inside inery.setup there is ine.py and tools directory
+
+Give ine.py script permission for execution with "chmod" command:
+```
+chmod +x ine.py
+```
+To export path to local os envirment for inery binaries, inside inery.setup run ine.py script with --export options
+```
+./ine.py --export
+```
+Script has written path to .bashrc file, now in order to work you paste this line in terminal, it will refresh envirmental path variable for current terminall session
+```
+cd; source .bashrc; cd -
+```
+
+# Become a Lite Node
+
+##### Configure IP
+
+for configuring node with yours server IP information go to inery-node/inery.setup/tools/ open config.json
+```
+ cd tools
+```
+```
+ nano config.json
+```
+
+find "LITE_NODE" and replace placeholder
+
+IP = IP or DNS address of server
+```
+    "LITE_NODE" : {
+        "PEER_ADDRESS" : "IP:9010",
+        "HTTP_ADDRESS": "0.0.0.0:8888",
+        "HOST_ADDRESS": "0.0.0.0:9010"
+    },
+```
+(Save it (ctrl+S), Type "Y" and exit (ctrl+X))
+
+##### Start blockchain protocol
+
+go to previous directory "inery-setup" and run ine.py script
+
+ine.py script will start a blockchain protocol, run it with options "--lite"
+```
+ ./ine.py --lite
+```
+If everything is setup properly, after executing above command you should be able to see replay of blocks, may be up to few hours until sync is finished. After blockchain is replayed you will see new created blocks.
+
+Go to directory lite.node and execute script ./start.sh
+```
+ ./start.sh
+ ```
+ </p>
+ 
+ # Become a Master Node
+
+##### Configuration
+
+Configuring node with Inery Account name and server IP or DNS go to inery-node/inery.setup/tools/
+```
+ cd tools
+```
+
+open config.json file
+```
+ nano config.json
+```
+scroll down to MASTER ACCOUNT and replace placeholders
+
+<sub>
+AccountName = Inery master account name
+PublicKey = Public key of an account
+PrivateKey = Private key of an account
+IP = IP address or DNS of your server
+</sub>
+```
+"MASTER_ACCOUNT":
+{
+    "NAME": "AccountName",
+    "PUBLIC_KEY": "PublicKey",
+    "PRIVATE_KEY": "PrivateKey",
+    "PEER_ADDRESS": "IP:9010",
+    "HTTP_ADDRESS": "0.0.0.0:8888",
+    "HOST_ADDRESS": "0.0.0.0:9010"
+}
+```
+
+(Save it (ctrl+S), Type "Y" and exit (ctrl+X))
+
+###### Start blockchain protocol
+
+go to previous directory "inery-setup" and run ine.py script
+```
+ cd ..
+```
+
+ine.py script will start a blockchain protocol, run it with options "--master"
+```
+ ./ine.py --master
+```
+
+If everything is setup properly, after executing above command you should be able to see replay of blocks, may be up to few hours until sync is finished. After blockchain is replayed you will see new created blocks.
+
+Go to directory master.node and execute script ./start.sh
+```
+ ./start.sh
+```
+
+Register and approve
+
+After everything is setup, you have to register and after approve it your account as producer
+
+In order for transaction to pass, you will need wallet activated To activate wallet, go to user directory and type command :
+```
+cd;  cline wallet create --file defaultWallet.txt
+```
+Now you created your default wallet with password saved in "defaultWallet.txt" file In order to use wallet, wallet must me unlocked To do so,replace YOUR_WALLET_PASSWORD with acctual password and execute command :
+```
+ cline wallet unlock --password YOUR_WALLET_PASSWORD
+```
+After wallet is unlocked, import your account's private key, replacing MASTER_PRIVATE_KEY with private key of your account, by executing command :
+
+ cline wallet import --private-key MASTER_PRIVATE_KEY
+
+Now you can register and approve your account as Master (block producer)
+
+Register as producer by executing command:
+```
+ cline system regproducer ACCOUNT_NAME ACCOUNT_PUBLIC_KEY 0.0.0.0:9010
+```
+Approve your account as producer by executing command:
+```
+ cline system makeprod approve ACCOUNT_NAME ACCOUNT_NAME
+ ```
+ 
 
