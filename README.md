@@ -72,10 +72,10 @@ autoconf libtool curl zlib1g-dev sudo ruby libusb-1.0-0-dev \
 libcurl4-gnutls-dev pkg-config patch llvm-7-dev clang-7 vim-common jq libncurses5
 ```
 
-</P>
+
 ## 1. Create your Account and Register your IP here [Inery Dashboard](https://testnet.inery.io/)
 
-</p>
+
 ## 2. Update Tools
 ```
 sudo apt-get update && sudo apt install git && sudo apt install screen
@@ -225,9 +225,9 @@ Now you created your default wallet with password saved in "defaultWallet.txt" f
  cline wallet unlock --password YOUR_WALLET_PASSWORD
 ```
 After wallet is unlocked, import your account's private key, replacing MASTER_PRIVATE_KEY with private key of your account, by executing command :
-
+```
  cline wallet import --private-key MASTER_PRIVATE_KEY
-
+```
 Now you can register and approve your account as Master (block producer)
 
 Register as producer by executing command:
