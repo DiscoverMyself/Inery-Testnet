@@ -33,17 +33,25 @@ The Inery software represents a perfect solution for any business that wants to 
 
 </p>
 
+>
+>
+
 ### Software Requirements
 
 | Component |	Minimum Requirement |
 | ------------ | ------------ |
 | OS | Ubuntu 16.04 |
 
-### Recommended 
+**Recommended** 
 
 | Component | Recommended Requirement |
 | ----------- | ----------- |
 | OS | Ubuntu 18.04 or higher |
+
+
+
+
+
 
 ## Required Dependendencies
 For building Inery binaries, blockchain requires some software dependencies. The main dependencies are :
