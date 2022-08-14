@@ -41,16 +41,17 @@ The Inery software represents a perfect solution for any business that wants to 
 ### Recommended 
 
 | Component | Recommended Requirement |
+| ----------- | ----------- |
 | OS | Ubuntu 18.04 or higher |
 
 ## Required Dependendencies
 For building Inery binaries, blockchain requires some software dependencies. The main dependencies are :
 
--Clang
--CMake
--Boost
--OpenSSL
--LLVM
+- Clang
+- CMake
+- Boost
+- OpenSSL
+- LLVM
 
 ## Installing Dependencies
 To install all required dependencies on ubuntu distribution open terminal and execute the following command:
