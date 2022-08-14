@@ -174,10 +174,10 @@ open config.json file
 scroll down to MASTER ACCOUNT and replace placeholders
 
 <sub>
-AccountName = Inery master account name
-PublicKey = Public key of an account
-PrivateKey = Private key of an account
-IP = IP address or DNS of your server
+- AccountName = Inery master account name
+- PublicKey = Public key of an account
+- PrivateKey = Private key of an account
+- IP = IP address or DNS of your server
 </sub>
 
 
