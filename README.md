@@ -23,9 +23,10 @@ The Inery software represents a perfect solution for any business that wants to 
 | Storage	| 500 GB HDD |
 | Connection | 100 Mbit/s port |
 
-*Recommended Requirement*
+**Recommended Requirement**
 
 | CPU | Intel Core i7-8700 Hexa-Core |
+| --------- | ------------ |
 | RAM | 64 GB DDR4 RAM |
 | Storage	 | 2 x 1 TB NVMe SSD |
 | Connection | 1 Gbit/s port |
